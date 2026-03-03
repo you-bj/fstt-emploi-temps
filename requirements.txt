@@ -1,0 +1,83 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# REQUIREMENTS - Système de Gestion des Emplois du Temps FSTT
+# ═══════════════════════════════════════════════════════════════════════════════
+# 
+# Projet: Gestion des emplois du temps pour la Faculté des Sciences 
+#         et Techniques de Tanger (FSTT)
+#
+# Fonctionnalités:
+#   - Génération automatique d'emplois du temps
+#   - Gestion des réservations et rattrapages
+#   - Notifications pour enseignants et étudiants
+#   - Export PDF, Excel, PNG avec couleurs
+#   - Interface moderne avec PyQt6
+#
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ──────────────────────────────────────────────────────────────
+# DÉPENDANCES OBLIGATOIRES
+# ──────────────────────────────────────────────────────────────
+
+# Interface graphique Qt6
+PyQt6>=6.4.0
+
+# Export PDF (rapports, emplois du temps)
+reportlab>=4.0.0
+
+# Export Excel (tableaux, statistiques)
+openpyxl>=3.1.0
+
+# Traitement d'images (export PNG/JPG)
+Pillow>=10.0.0
+
+# ──────────────────────────────────────────────────────────────
+# DÉPENDANCES OPTIONNELLES
+# ──────────────────────────────────────────────────────────────
+
+# Text-to-Speech (lecture vocale - optionnel)
+# pyttsx3>=2.90  # Alternative pour lecture vocale directe
+
+# ──────────────────────────────────────────────────────────────
+# INCLUS DANS PYTHON (pas besoin d'installer)
+# ──────────────────────────────────────────────────────────────
+# sqlite3     - Base de données
+# datetime    - Gestion des dates/heures
+# calendar    - Utilitaires calendrier
+# os          - Opérations système
+# pathlib     - Chemins de fichiers
+# json        - Sérialisation JSON
+# hashlib     - Hachage (mots de passe)
+# typing      - Annotations de types
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# INSTRUCTIONS D'INSTALLATION
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+# 1. Créer un environnement virtuel (recommandé):
+#    python -m venv venv
+#
+# 2. Activer l'environnement virtuel:
+#    Windows:   venv\Scripts\activate
+#    Linux/Mac: source venv/bin/activate
+#
+# 3. Installer les dépendances:
+#    pip install -r requirements.txt
+#
+# 4. Lancer l'application:
+#    python main.py
+#
+# ═══════════════════════════════════════════════════════════════════════════════
+# RÉSOLUTION DE PROBLÈMES
+# ═══════════════════════════════════════════════════════════════════════════════
+#
+# Erreur PyQt6 sur Windows:
+#    pip install PyQt6 --upgrade
+#
+# Erreur reportlab:
+#    pip install reportlab --upgrade
+#
+# Erreur Permission denied (export):
+#    - Fermez le fichier s'il est ouvert dans une autre application
+#    - Choisissez un dossier différent lors de l'export
+#
+# ═══════════════════════════════════════════════════════════════════════════════
